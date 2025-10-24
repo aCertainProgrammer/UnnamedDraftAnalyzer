@@ -32,8 +32,8 @@ export const test_data: Array<Draft> = [
 		redTeam: '',
 		blueTeam: '',
 		picks: [
-			'ashe',
 			'brand',
+			'ashe',
 			'blitzcrank',
 			'elise',
 			'hecarim',

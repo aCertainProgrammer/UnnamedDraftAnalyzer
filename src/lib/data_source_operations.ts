@@ -8,5 +8,14 @@ export function getAllChampions(): Array<Champion> {
 		champions = champions.concat(default_data.all[role]);
 	}
 
-	return champions;
+	let uniqueChampions: Array<Champion> = [];
+	for (const champion of champions) {
+		if (!uniqueChampions.includes(champion)) {
+			uniqueChampions.push(champion);
+		}
+	}
+
+	uniqueChampions.sort();
+
+	return uniqueChampions;
 }
